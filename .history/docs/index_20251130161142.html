@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Website — Home</title>
+  <meta name="description" content="A simple modern starter index.html — responsive and accessible." />
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#081022 0%, #071627 60%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.45;
+      padding:24px;
+    }
+
+    /* Layout */
+    .container{max-width:1100px;margin:0 auto;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{
+      width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#052022;box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+    nav a:hover{color:#fff;background:var(--glass)}
+    .cta{background:linear-gradient(90deg,#22c1c3,#6ee7b7);color:#052022;padding:8px 14px;border-radius:10px;font-weight:600;text-decoration:none}
+    /* Mobile */
+    .menu-btn{display:none;background:transparent;border:0;color:var(--muted);font-size:20px}
+    .mobile-nav{display:none;flex-direction:column;gap:6px;margin-top:12px}
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      padding:28px;border-radius:var(--radius);backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+    }
+    .eyebrow{color:var(--accent);font-weight:700;font-size:13px;margin-bottom:12px;display:inline-block}
+    h1{font-size:32px;margin:0 0 12px 0;line-height:1.05}
+    p.lead{color:var(--muted);margin:0 0 18px 0}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:#0ea5a9;color:#021617}
+    .btn-ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+
+    /* Card on right */
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px;border-radius:12px}
+    .stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .stat{flex:1;min-width:110px;background:rgba(255,255,255,0.02);padding:10px;border-radius:10px}
+    .stat strong{display:block;font-size:18px}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Form */
+    form{display:flex;flex-direction:column;gap:10px}
+    label{font-size:13px;color:var(--muted)}
+    input,textarea{
+      padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);
+      background:transparent;color:inherit;outline:none;font-size:14px
+    }
+    button[type="submit"]{padding:10px 12px;border-radius:10px;border:0;background:linear-gradient(90deg,#7c3aed,#5eead4);color:#021617;font-weight:700}
+
+    footer{margin-top:28px;color:var(--muted);font-size:14px;text-align:center;padding-top:16px;border-top:1px dashed rgba(255,255,255,0.02)}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; padding:18px}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .menu-btn{display:block}
+      nav{display:none}
+      .mobile-nav{display:flex}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      .hero{padding:14px}
+      h1{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">MS</div>
+        <div>
+          <div style="font-weight:700">MySite</div>
+          <div class="muted" style="font-size:12px">built with ❤</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#get-started">Get started</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">☰</button>
+    </header>
+
+    <!-- Mobile nav (hidden on wide screens) -->
+    <div id="mobileNav" class="mobile-nav" hidden>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#get-started">Get started</a>
+    </div>
+
+    <main>
+      <section class="hero" aria-labelledby="heroHeading">
+        <div>
+          <span class="eyebrow">New • Starter</span>
+          <h1 id="heroHeading">A simple, beautiful starter index.html</h1>
+          <p class="lead">Fast, responsive, and accessible template you can customize for portfolios, landing pages, or small projects. Minimal JS, no frameworks required.</p>
+          <div class="actions">
+            <a class="btn btn-primary" id="get-started" href="#contact">Start a project</a>
+            <a class="btn btn-ghost" href="#features">See features</a>
+          </div>
+
+          <div class="features" style="margin-top:18px;">
+            <div class="card">
+              <h3>Clean markup</h3>
+              <p class="muted">Semantic HTML and clear structure so search engines and screen readers behave nicely.</p>
+            </div>
+            <div class="card">
+              <h3>Responsive</h3>
+              <p class="muted">Breakpoints for mobile, tablet, and desktop. Easy to tweak.</p>
+            </div>
+            <div class="card">
+              <h3>Accessible</h3>
+              <p class="muted">Keyboard-friendly, ARIA where needed, high contrast.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick stats">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div class="muted" style="font-size:13px">Project Status</div>
+              <strong style="font-size:18px">Starter Ready</strong>
+            </div>
+            <div style="text-align:right">
+              <div class="muted" style="font-size:13px">Version</div>
+              <strong>1.0.0</strong>
+            </div>
+          </div>
+
+          <div class="stats" role="list">
+            <div class="stat" role="listitem">
+              <div class="muted">Pages</div>
+              <strong>1 (expandable)</strong>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="muted">Load</div>
+              <strong>~20KB</strong>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="muted">Accessibility</div>
+              <strong>High</strong>
+            </div>
+          </div>
+
+          <hr style="border:none;border-top:1px dashed rgba(255,255,255,0.02);margin:12px 0">
+
+          <div style="font-size:13px;color:var(--muted)">
+            Want customization? Tell me your colors, fonts, or layout and I’ll adapt this file.
+          </div>
+        </aside>
+      </section>
+
+      <section id="contact" style="margin-top:20px">
+        <div class="card">
+          <h2 style="margin-top:0">Contact / Quick message</h2>
+          <form onsubmit="event.preventDefault(); handleSubmit()" aria-label="Contact form">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" required placeholder="Your name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" required placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="msg">Message</label>
+              <textarea id="msg" rows="4" placeholder="Tell me what you want changed..."></textarea>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+              <button type="submit">Send message</button>
+              <div id="status" class="muted" style="font-size:13px"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> MySite — Made with care • <span class="muted">Simple starter template</span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Mobile nav toggle
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const nav = document.getElementById('mobileNav');
+      btn.addEventListener('click', () => {
+        const open = nav.hasAttribute('hidden') ? false : true;
+        if (open) {
+          nav.setAttribute('hidden','');
+          btn.setAttribute('aria-expanded','false');
+        } else {
+          nav.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded','true');
+        }
+      });
+    })();
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fake form submit handler (progressive enhancement placeholder)
+    function handleSubmit(){
+      const status = document.getElementById('status');
+      status.textContent = 'Message sent — thanks!';
+      setTimeout(()=> status.textContent = '', 4000);
+      // If you connect a backend, replace this with fetch() to send data.
+    }
+
+    // Small accessibility focus: close mobile nav when a link is clicked
+    document.querySelectorAll('#mobileNav a').forEach(a => a.addEventListener('click', () => {
+      const nav = document.getElementById('mobileNav');
+      nav.setAttribute('hidden','');
+      document.getElementById('menuBtn').setAttribute('aria-expanded','false');
+    }));
+  </script>
+</body>
+</html>

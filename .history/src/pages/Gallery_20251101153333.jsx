@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import StarsCanvas from "../components/StarBackground"

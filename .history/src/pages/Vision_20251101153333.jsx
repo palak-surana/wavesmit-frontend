@@ -1,4 +1,3 @@
-import React from "react";
 import StarsCanvas from "../components/StarBackground"
 
 const Vision = () => {

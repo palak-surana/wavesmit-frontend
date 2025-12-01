@@ -20,6 +20,7 @@ import Internships from "./pages/events/Internships";
 import Mentalhealthandwellbeing from "./pages/events/Mentalhealthandwellbeing";
 
 // 🧾 Report pages
+import Reports from "./pages/reports/Reports";
 import NSS from "./pages/reports/NSS.jsx";
 import Waves from "./pages/reports/Waves.jsx";
 
@@ -82,9 +83,10 @@ const App = () => {
           element={<Mentalhealthandwellbeing />}
         />
 
-        {/* 🧾 Reports */}
-        <Route path="/reports/nss" element={<NSS />} />
-        <Route path="/reports/waves" element={<Waves />} />
+        {/* 🧾 Reports - route the report paths to the composite Reports page */}
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/reports/nss" element={<Reports />} />
+        <Route path="/reports/waves" element={<Reports />} />
 
         {/* 🏆 Awards */}
         <Route path="/awards/csr-fund" element={<CSRFund />} />

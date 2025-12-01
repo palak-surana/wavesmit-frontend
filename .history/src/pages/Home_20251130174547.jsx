@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react"; // ← ADDED React default import
 import StarsCanvas from "../components/StarBackground";
 

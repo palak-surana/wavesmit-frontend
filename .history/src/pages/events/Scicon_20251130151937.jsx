@@ -1,4 +1,3 @@
-import React from "react";
 import StarsCanvas from "../../components/StarBackground";
 
 const sciconEvents = [
@@ -37,10 +36,9 @@ const Scicon = () => (
             src={event.img}
             alt={event.title}
             className="rounded-xl mb-4 w-full object-cover"
-            onError={(e) => (e.currentTarget.src = "/assets/image-placeholder.png")}
-            draggable="false"
           />
 
+          {/* Event Details */}
           <div className="mb-4">
             {event.details.map((d, i) => (
               <div key={i} className="mb-2">
@@ -50,6 +48,7 @@ const Scicon = () => (
             ))}
           </div>
 
+          {/* Highlights */}
           <ul className="list-disc pl-5 mb-4 text-gray-300">
             {event.highlights.map((h, i) => (
               <li key={i}>{h}</li>

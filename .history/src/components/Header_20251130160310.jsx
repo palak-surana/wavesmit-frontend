@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"; // ← ADDED default React import
 import { IoMenu } from "react-icons/io5";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 

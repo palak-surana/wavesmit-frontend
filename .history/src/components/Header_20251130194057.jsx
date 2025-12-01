@@ -243,7 +243,7 @@ const Header = () => {
                 );
               }
 
-              // Reports dropdown
+              // Reports dropdown (uses anchors to scroll within Reports page)
               if (item.link === "/reports") {
                 return (
                   <li
@@ -266,12 +266,12 @@ const Header = () => {
                     {dropdownOpen === "reports" && (
                       <ul className="absolute top-full left-0 mt-1 w-56 bg-[#0d1b6b] border border-blue-900 rounded-md shadow-lg py-2 z-50">
                         <li>
-                          <Link to="/reports/nss" className="block px-4 py-2 text-white hover:bg-blue-800">
+                          <Link to="/reports#nss" className="block px-4 py-2 text-white hover:bg-blue-800">
                             NSS Reports
                           </Link>
                         </li>
                         <li>
-                          <Link to="/reports/waves" className="block px-4 py-2 text-white hover:bg-blue-800">
+                          <Link to="/reports#waves" className="block px-4 py-2 text-white hover:bg-blue-800">
                             WAVES Reports
                           </Link>
                         </li>

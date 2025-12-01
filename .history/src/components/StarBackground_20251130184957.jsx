@@ -1,15 +1,15 @@
-import React, { useState, useRef, Suspense } from "react"; // ← ADDED React default import
+import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as THREE from "three";
 
-// Component to create the star background
+// Star background component
 const StarBackground = (props) => {
-  const ref = useRef(); // Reference to the Points component
-  // Generate random points within a sphere
+  const ref = useRef();
+
+  // Generate random points within a sphere (memoized)
   const [sphere] = useState(() => {
-    // Create a smaller number of points and ensure they're all valid
-    const count = 3000;
+    const count = 3000; // lower -> faster, higher -> denser stars
     const temp = new Float32Array(count * 3);
     const radius = 1.2;
 
@@ -26,7 +26,7 @@ const StarBackground = (props) => {
     return temp;
   });
 
-  // Rotate the points on each frame
+  // gentle rotation
   useFrame((state, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 10;
@@ -36,12 +36,18 @@ const StarBackground = (props) => {
 
   return (
     <group rotation={[0, 0, 0.785398]}>
-      {/* 0.785398 radians = 45 degrees */}
+      {/* Points from drei */}
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+        {/* 
+          NOTE:
+          - three.js ignores alpha in Color strings -> use opacity prop instead
+          - increased size for visibility; adjust size to taste
+        */}
         <PointMaterial
           transparent
-          color="rgba(255,255,255,0.18)"
-          size={0.0015}
+          color="#ffffff"   // use hex / rgb without alpha
+          opacity={0.18}    // control alpha via opacity prop
+          size={0.01}       // increase if stars are too faint; try 0.01 - 0.02
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -50,15 +56,14 @@ const StarBackground = (props) => {
   );
 };
 
-// Component to render the star background within a canvas
+// Canvas wrapper (non-interactive background)
 const StarsCanvas = () => (
   <div className="w-full h-full fixed inset-0 z-[2] pointer-events-none">
     <Canvas camera={{ position: [0, 0, 1] }}>
-      {/* Suspense to handle loading of the star background */}
       <Suspense fallback={null}>
         <StarBackground />
       </Suspense>
-      <Preload all /> {/* Preload all resources */}
+      <Preload all />
     </Canvas>
   </div>
 );
