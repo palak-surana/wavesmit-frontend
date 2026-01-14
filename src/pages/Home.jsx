@@ -56,7 +56,7 @@ const Home = () => {
             textShadow: "0 4px 32px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6)",
           }}
         >
-          Welcome to Waves and NSS
+          Welcome to Waves
         </h1>
 
         <h2 className="text-2xl sm:text-3xl text-gray-200 mb-12">MIT Academy of Engineering</h2>
