@@ -24,9 +24,10 @@ import NSS from "./pages/reports/NSS.jsx";
 import Waves from "./pages/reports/Waves.jsx";
 
 // 🏆 Awards pages
-import CSRFund from "./pages/awards/CSRFund";
-import Copyright from "./pages/awards/Copyright";
-import AppreciationLetters from "./pages/awards/AppreciationLetters";
+import CSRFund from "./pages/Awards/CSRFund";
+import Copyright from "./pages/Awards/Copyright";
+import AppreciationLetters from "./pages/Awards/AppreciationLetters";
+
 
 const App = () => {
   const [language, setLanguage] = useState("en");
