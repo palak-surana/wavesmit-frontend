@@ -26,3 +26,4 @@ dist-ssr
 
 # Don't ignore mp4 files
 !*.mp4
+.history
