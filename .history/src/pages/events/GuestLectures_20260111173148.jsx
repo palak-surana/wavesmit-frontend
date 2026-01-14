@@ -79,7 +79,7 @@ const guestLectures = [
 
    {
     title: 'Invited Talk by Padmashree Prof. H C Verma on "Importance of Science"',
-    img: "/images/HCVerma2025/IMG_0700.jpg",
+    img: "/images/HCVerma2025/IMG_0547.jpg",
     details: [
       { heading: "Date & Venue", content: ["February 4 2025", "MITAOE, Alandi (Pune)"] },
       { heading: "Speaker", content: ["Padmashree Professor H C Verma"] },

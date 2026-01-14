@@ -15,9 +15,7 @@ const About = () => {
 
         {/* ================= INTRO ================= */}
         <div className="text-center mb-20">
-          <h1 className="heading-1 mb-6 text-white">
-            About Waves & NSS
-          </h1>
+          
           <p className="body-large max-w-4xl mx-auto text-gray-300 leading-relaxed">
             At MITAOE, Waves and NSS come together to create a space where
             innovation is not limited to laboratories and service is not limited
@@ -26,9 +24,8 @@ const About = () => {
           </p>
         </div>
 
-        
 
-        {/* ================= WHY WAVES AND NSS ================= */}
+        {/* ================= WHY WAVES X NSS ================= */}
         <section className={`${cardStyle} mb-16`}>
           <h2 className="heading-3 mb-6 text-white text-center">
             Why Waves And NSS?

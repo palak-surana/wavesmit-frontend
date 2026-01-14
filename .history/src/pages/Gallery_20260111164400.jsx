@@ -31,20 +31,7 @@ const events = [
             { src: "/images/BloodDonation/IMGB_7.jpg" },
         ],
     },
-     {
-        key: "GanpatiVisarjan",
-        title: "Ganpati Visarjan",
-        images: [
-            { src: "/images/GanpatiVisarjan/IMG_7550_1.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7568_2.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7649_3.jpg" },
-        
-            { src: "/images/GanpatiVisarjan/IMG_7595_5.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7633_6.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7648_7.jpg" },
-        ],
-    },
-   
+
    {
     key: "arvindgupta",
     title: "Arvind Gupta Sir Talk Event",
@@ -356,16 +343,6 @@ const events = [
                 src: "/images/JagrutiBlindSchool/IMG-20240202-WA0076.webp",
                 alt: "Jagruti Blind School Event 6",
             },
-        ],
-    },
-    {
-        key: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        title: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        images: [
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5273 (1).jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5289.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5293.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5301.jpg" },
         ],
     },
 ]

@@ -18,89 +18,6 @@ const scrollbarStyles = `
 `
 
 const events = [
-     {
-        key: "blooddonation",
-        title: "Blood Donation",
-        images: [
-            { src: "/images/BloodDonation/IMGB_1.jpg" },
-            { src: "/images/BloodDonation/IMGB_2.jpg" },
-            { src: "/images/BloodDonation/IMGB_3.jpg" },
-            { src: "/images/BloodDonation/IMGB_4.jpg" },
-            { src: "/images/BloodDonation/IMGB_5.jpg" },
-            { src: "/images/BloodDonation/IMGB_6.jpg" },
-            { src: "/images/BloodDonation/IMGB_7.jpg" },
-        ],
-    },
-     {
-        key: "GanpatiVisarjan",
-        title: "Ganpati Visarjan",
-        images: [
-            { src: "/images/GanpatiVisarjan/IMG_7550_1.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7568_2.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7649_3.jpg" },
-        
-            { src: "/images/GanpatiVisarjan/IMG_7595_5.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7633_6.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7648_7.jpg" },
-        ],
-    },
-   
-   {
-    key: "arvindgupta",
-    title: "Arvind Gupta Sir Talk Event",
-    images: [
-        {
-            src: "/images/ArvindGuptaSir/AG_01.webp",
-            alt: "AG_01",
-        },
-        {
-            src: "/images/ArvindGuptaSir/AG_02.webp",
-            alt: "AG_02",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_03.webp",
-            alt: "AG_03",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_04.webp",
-            alt: "AG_04",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_05.webp",
-            alt: "AG_05",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_06.webp",
-            alt: "AG_06",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_07.webp",
-            alt: "AG_07",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_08.webp",
-            alt: "AG_08",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_09.webp",
-            alt: "AG_09",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_10.webp",
-            alt: "AG_10",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_11.webp",
-            alt: "AG_11",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_12.webp",
-            alt: "AG_12",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_13.webp",
-            alt: "AG_13",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_14.webp",
-            alt: "AG_14",
-        }, {
-            src: "/images/ArvindGuptaSir/AG_15.webp",
-            alt: "AG_15",
-        },
-
-    ],
-},
-
-
     {
         key: "hcverma",
         title: "HC Verma Sir Talk Event 2023",
@@ -143,36 +60,6 @@ const events = [
             },
         ],
     },
-     {
-  key: "hcverma2025",
-  title: "HC Verma Sir Talk Event 2025",
-  images: [
-    { src: "/images/HCVerma2025/IMG_0398.jpg" },
-   
-    { src: "/images/HCVerma2025/IMG_0408.jpg" },
-  
-    { src: "/images/HCVerma2025/IMG_0487.jpg" },
-    { src: "/images/HCVerma2025/IMG_0519.jpg" },
-    { src: "/images/HCVerma2025/IMG_0532.jpg" },
-    
-    { src: "/images/HCVerma2025/IMG_0547.jpg" },
-  
-    { src: "/images/HCVerma2025/IMG_0622.jpg" },
-    { src: "/images/HCVerma2025/IMG_0623.jpg" },
-    { src: "/images/HCVerma2025/IMG_0544.jpg" },
-    { src: "/images/HCVerma2025/IMG_0647.jpg" },
-    { src: "/images/HCVerma2025/IMG_0654.jpg" },
-    { src: "/images/HCVerma2025/IMG_0690.jpg" },
-    { src: "/images/HCVerma2025/IMG_0693.jpg" },
-    { src: "/images/HCVerma2025/IMG_0700.jpg" },
-    { src: "/images/HCVerma2025/IMG_0714.jpg" },
-    { src: "/images/HCVerma2025/IMG_0746.jpg" },
-    { src: "/images/HCVerma2025/IMG_0755.jpg" },
-    { src: "/images/HCVerma2025/IMG_0771.jpg" },
-    { src: "/images/HCVerma2025/IMG_0774.jpg" },
-    
-  ],
-},
     {
         key: "scicon23",
         title: "SCICON 2023",
@@ -293,7 +180,6 @@ const events = [
             },
         ],
     },
-    
     {
         key: "telescope",
         title: "Telescope Making Workshop",
@@ -358,18 +244,7 @@ const events = [
             },
         ],
     },
-    {
-        key: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        title: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        images: [
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5273 (1).jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5289.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5293.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5301.jpg" },
-        ],
-    },
 ]
-
 
 const AUTO_ADVANCE_MS = 3400
 

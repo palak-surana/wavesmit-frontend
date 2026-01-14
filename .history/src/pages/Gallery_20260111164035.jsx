@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react"
+import from "react";{ useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import StarsCanvas from "../components/StarBackground"
 
@@ -18,33 +18,6 @@ const scrollbarStyles = `
 `
 
 const events = [
-     {
-        key: "blooddonation",
-        title: "Blood Donation",
-        images: [
-            { src: "/images/BloodDonation/IMGB_1.jpg" },
-            { src: "/images/BloodDonation/IMGB_2.jpg" },
-            { src: "/images/BloodDonation/IMGB_3.jpg" },
-            { src: "/images/BloodDonation/IMGB_4.jpg" },
-            { src: "/images/BloodDonation/IMGB_5.jpg" },
-            { src: "/images/BloodDonation/IMGB_6.jpg" },
-            { src: "/images/BloodDonation/IMGB_7.jpg" },
-        ],
-    },
-     {
-        key: "GanpatiVisarjan",
-        title: "Ganpati Visarjan",
-        images: [
-            { src: "/images/GanpatiVisarjan/IMG_7550_1.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7568_2.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7649_3.jpg" },
-        
-            { src: "/images/GanpatiVisarjan/IMG_7595_5.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7633_6.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7648_7.jpg" },
-        ],
-    },
-   
    {
     key: "arvindgupta",
     title: "Arvind Gupta Sir Talk Event",
@@ -293,7 +266,274 @@ const events = [
             },
         ],
     },
+    import React from "react";
+import { useState, useEffect, useRef } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import StarsCanvas from "../components/StarBackground"
+
+// Add custom CSS for hiding scrollbar
+const scrollbarStyles = `
+.gallery-preview-bar::-webkit-scrollbar {
+    display: none;
+}
+.gallery-preview-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.gallery-preview-bar.dragging {
+    scroll-behavior: auto;
+}
+`
+
+const events = [
+   {
+    key: "arvindgupta",
+    title: "Arvind Gupta Sir Talk Event",
+    images: [
+        {
+            src: "/images/ArvindGuptaSir/AG_01.webp",
+            alt: "AG_01",
+        },
+        {
+            src: "/images/ArvindGuptaSir/AG_02.webp",
+            alt: "AG_02",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_03.webp",
+            alt: "AG_03",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_04.webp",
+            alt: "AG_04",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_05.webp",
+            alt: "AG_05",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_06.webp",
+            alt: "AG_06",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_07.webp",
+            alt: "AG_07",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_08.webp",
+            alt: "AG_08",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_09.webp",
+            alt: "AG_09",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_10.webp",
+            alt: "AG_10",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_11.webp",
+            alt: "AG_11",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_12.webp",
+            alt: "AG_12",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_13.webp",
+            alt: "AG_13",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_14.webp",
+            alt: "AG_14",
+        }, {
+            src: "/images/ArvindGuptaSir/AG_15.webp",
+            alt: "AG_15",
+        },
+
+    ],
+},
+
+
+    {
+        key: "hcverma",
+        title: "HC Verma Sir Talk Event 2023",
+        images: [
+            {
+                src: "/images/HCVerma/IMG_3327.webp",
+                alt: "HC Verma Event Image 1",
+            },
+            {
+                src: "/images/HCVerma/IMG_3338.webp",
+                alt: "HC Verma Event Image 2",
+            },
+            {
+                src: "/images/HCVerma/IMG_3345.webp",
+                alt: "HC Verma Event Image 3",
+            },
+            {
+                src: "/images/HCVerma/IMG_3389.webp",
+                alt: "HC Verma Event Image 4",
+            },
+            {
+                src: "/images/HCVerma/IMG_3419.webp",
+                alt: "HC Verma Event Image 5",
+            },
+            {
+                src: "/images/HCVerma/IMG_3468.webp",
+                alt: "HC Verma Event Image 6",
+            },
+            {
+                src: "/images/HCVerma/IMG_3503.webp",
+                alt: "HC Verma Event Image 7",
+            },
+            {
+                src: "/images/HCVerma/IMG_3504.webp",
+                alt: "HC Verma Event Image 8",
+            },
+            {
+                src: "/images/HCVerma/IMG_3506.webp",
+                alt: "HC Verma Event Image 9",
+            },
+        ],
+    },
+     {
+  key: "hcverma2025",
+  title: "HC Verma Sir Talk Event 2025",
+  images: [
+    { src: "/images/HCVerma2025/IMG_0398.jpg" },
+   
+    { src: "/images/HCVerma2025/IMG_0408.jpg" },
+  
+    { src: "/images/HCVerma2025/IMG_0487.jpg" },
+    { src: "/images/HCVerma2025/IMG_0519.jpg" },
+    { src: "/images/HCVerma2025/IMG_0532.jpg" },
     
+    { src: "/images/HCVerma2025/IMG_0547.jpg" },
+  
+    { src: "/images/HCVerma2025/IMG_0622.jpg" },
+    { src: "/images/HCVerma2025/IMG_0623.jpg" },
+    { src: "/images/HCVerma2025/IMG_0544.jpg" },
+    { src: "/images/HCVerma2025/IMG_0647.jpg" },
+    { src: "/images/HCVerma2025/IMG_0654.jpg" },
+    { src: "/images/HCVerma2025/IMG_0690.jpg" },
+    { src: "/images/HCVerma2025/IMG_0693.jpg" },
+    { src: "/images/HCVerma2025/IMG_0700.jpg" },
+    { src: "/images/HCVerma2025/IMG_0714.jpg" },
+    { src: "/images/HCVerma2025/IMG_0746.jpg" },
+    { src: "/images/HCVerma2025/IMG_0755.jpg" },
+    { src: "/images/HCVerma2025/IMG_0771.jpg" },
+    { src: "/images/HCVerma2025/IMG_0774.jpg" },
+    
+  ],
+},
+    {
+        key: "scicon23",
+        title: "SCICON 2023",
+        images: [
+            {
+                src: "/images/Scicon23/DSC_0027.webp",
+                alt: "SCICON 2023 Image 1",
+            },
+            {
+                src: "/images/Scicon23/DSC_0032.webp",
+                alt: "SCICON 2023 Image 2",
+            },
+            {
+                src: "/images/Scicon23/DSC_0110.webp",
+                alt: "SCICON 2023 Image 3",
+            },
+            {
+                src: "/images/Scicon23/DSC_0562.webp",
+                alt: "SCICON 2023 Image 4",
+            },
+            {
+                src: "/images/Scicon23/DSC_0654.webp",
+                alt: "SCICON 2023 Image 5",
+            },
+            {
+                src: "/images/Scicon23/DSC_0730.webp",
+                alt: "SCICON 2023 Image 6",
+            },
+            {
+                src: "/images/Scicon23/IMG_3790.webp",
+                alt: "SCICON 2023 Image 7",
+            },
+            {
+                src: "/images/Scicon23/IMG_3857.webp",
+                alt: "SCICON 2023 Image 8",
+            },
+            {
+                src: "/images/Scicon23/IMG_3899.webp",
+                alt: "SCICON 2023 Image 9",
+            },
+            {
+                src: "/images/Scicon23/IMG_3928.webp",
+                alt: "SCICON 2023 Image 10",
+            },
+            {
+                src: "/images/Scicon23/IMG_3930.webp",
+                alt: "SCICON 2023 Image 11",
+            },
+            {
+                src: "/images/Scicon23/IMG_3943.webp",
+                alt: "SCICON 2023 Image 12",
+            },
+            {
+                src: "/images/Scicon23/IMG_3946.webp",
+                alt: "SCICON 2023 Image 13",
+            },
+            {
+                src: "/images/Scicon23/IMG_3973.webp",
+                alt: "SCICON 2023 Image 14",
+            },
+            {
+                src: "/images/Scicon23/IMG_3997.webp",
+                alt: "SCICON 2023 Image 15",
+            },
+        ],
+    },
+    {
+        key: "scicon24",
+        title: "SCICON 2024",
+        images: [
+            {
+                src: "/images/Scicon24/IMG_1867.webp",
+                alt: "SCICON 2024 Image 1",
+            },
+            {
+                src: "/images/Scicon24/IMG_1871.webp",
+                alt: "SCICON 2024 Image 2",
+            },
+            {
+                src: "/images/Scicon24/IMG_1878.webp",
+                alt: "SCICON 2024 Image 3",
+            },
+            {
+                src: "/images/Scicon24/IMG_2044.webp",
+                alt: "SCICON 2024 Image 4",
+            },
+            {
+                src: "/images/Scicon24/IMG_2047.webp",
+                alt: "SCICON 2024 Image 5",
+            },
+            {
+                src: "/images/Scicon24/IMG_2050.webp",
+                alt: "SCICON 2024 Image 6",
+            },
+            {
+                src: "/images/Scicon24/IMG_2053.webp",
+                alt: "SCICON 2024 Image 7",
+            },
+            {
+                src: "/images/Scicon24/IMG_2054.webp",
+                alt: "SCICON 2024 Image 8",
+            },
+            {
+                src: "/images/Scicon24/IMG_2061.webp",
+                alt: "SCICON 2024 Image 9",
+            },
+            {
+                src: "/images/Scicon24/IMG_2076.webp",
+                alt: "SCICON 2024 Image 10",
+            },
+            {
+                src: "/images/Scicon24/IMG_2103.webp",
+                alt: "SCICON 2024 Image 11",
+            },
+            {
+                src: "/images/Scicon24/IMG_2113.webp",
+                alt: "SCICON 2024 Image 12",
+            },
+        ],
+    },
     {
         key: "telescope",
         title: "Telescope Making Workshop",
@@ -358,14 +598,85 @@ const events = [
             },
         ],
     },
+]
+
     {
-        key: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        title: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
+        key: "blooddonation",
+        title: "Blood Donation",
         images: [
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5273 (1).jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5289.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5293.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5301.jpg" },
+            { src: "/images/BloodDonation/IMGB_1.jpg" },
+            { src: "/images/BloodDonation/IMGB_2.jpg" },
+            { src: "/images/BloodDonation/IMGB_3.jpg" },
+            { src: "/images/BloodDonation/IMGB_4.jpg" },
+            { src: "/images/BloodDonation/IMGB_5.jpg" },
+            { src: "/images/BloodDonation/IMGB_6.jpg" },
+            { src: "/images/BloodDonation/IMGB_7.jpg" },
+        ],
+    },
+]
+
+    {
+        key: "telescope",
+        title: "Telescope Making Workshop",
+        images: [
+            {
+                src: "/images/Telescope/IMG_9472.webp",
+                alt: "Telescope Workshop Image 1",
+            },
+            {
+                src: "/images/Telescope/IMG_9478.webp",
+                alt: "Telescope Workshop Image 2",
+            },
+            {
+                src: "/images/Telescope/IMG_9485.webp",
+                alt: "Telescope Workshop Image 3",
+            },
+            {
+                src: "/images/Telescope/IMG_9487.webp",
+                alt: "Telescope Workshop Image 4",
+            },
+            {
+                src: "/images/Telescope/IMG_9489.webp",
+                alt: "Telescope Workshop Image 5",
+            },
+            {
+                src: "/images/Telescope/IMG_9490.webp",
+                alt: "Telescope Workshop Image 6",
+            },
+            {
+                src: "/images/Telescope/IMG_9495.webp",
+                alt: "Telescope Workshop Image 7",
+            },
+        ],
+    },
+    {
+        key: "jagruti",
+        title: "Jagruti Blind School Visit",
+        images: [
+            {
+                src: "/images/JagrutiBlindSchool/IMG-20240116-WA0004.webp",
+                alt: "Jagruti Blind School Event 1",
+            },
+            {
+                src: "/images/JagrutiBlindSchool/IMG-20240202-WA0064.webp",
+                alt: "Jagruti Blind School Event 2",
+            },
+            {
+                src: "/images/JagrutiBlindSchool/IMG-20240202-WA0068.webp",
+                alt: "Jagruti Blind School Event 3",
+            },
+            {
+                src: "/images/JagrutiBlindSchool/IMG-20240116-WA0006.webp",
+                alt: "Jagruti Blind School Event 4",
+            },
+            {
+                src: "/images/JagrutiBlindSchool/IMG-20240202-WA0011.webp",
+                alt: "Jagruti Blind School Event 5",
+            },
+            {
+                src: "/images/JagrutiBlindSchool/IMG-20240202-WA0076.webp",
+                alt: "Jagruti Blind School Event 6",
+            },
         ],
     },
 ]

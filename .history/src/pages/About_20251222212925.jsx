@@ -15,23 +15,44 @@ const About = () => {
 
         {/* ================= INTRO ================= */}
         <div className="text-center mb-20">
-          <h1 className="heading-1 mb-6 text-white">
-            About Waves & NSS
-          </h1>
+          
           <p className="body-large max-w-4xl mx-auto text-gray-300 leading-relaxed">
-            At MITAOE, Waves and NSS come together to create a space where
+            At MIT AoE, Waves and NSS come together to create a space where
             innovation is not limited to laboratories and service is not limited
             to classrooms. We believe real change happens when science meets
             empathy.
           </p>
         </div>
 
-        
+        {/* ================= LOGOS ================= */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-10 mb-20">
+          <div className={cardStyle}>
+            <img
+              src="/images/waves-logo.png"
+              alt="MIT AoE Waves Logo"
+              className="w-40 mx-auto"
+            />
+            <h3 className="heading-3 mt-4 text-center text-white">
+              MIT AoE Waves
+            </h3>
+          </div>
 
-        {/* ================= WHY WAVES AND NSS ================= */}
+          <div className={cardStyle}>
+            <img
+              src="/images/nss-logo.png"
+              alt="NSS Logo"
+              className="w-40 mx-auto"
+            />
+            <h3 className="heading-3 mt-4 text-center text-white">
+              National Service Scheme (NSS)
+            </h3>
+          </div>
+        </div>
+
+        {/* ================= WHY WAVES X NSS ================= */}
         <section className={`${cardStyle} mb-16`}>
           <h2 className="heading-3 mb-6 text-white text-center">
-            Why Waves And NSS?
+            Why Waves × NSS?
           </h2>
           <p className="body-regular text-gray-300 text-center leading-relaxed max-w-4xl mx-auto">
             Waves focuses on scientific curiosity and technical innovation, while

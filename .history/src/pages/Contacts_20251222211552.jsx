@@ -6,13 +6,13 @@ const contacts = [
     name: "Puja Verma",
     img: "",
     role: "Teacher",
-    linkedin: "https://linkedin.com", // add later if available
+    linkedin: "",
   },
   {
     name: "Hussain Shaikh",
     img: "",
     role: "Teacher",
-    linkedin: "https://linkedin.com",
+    linkedin: "",
   },
   {
     name: "Hrishikesh Patil",
@@ -53,7 +53,6 @@ const Contacts = () => {
               className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md
                          p-6 text-center group transition-all duration-500"
             >
-              {/* Hover overlay */}
               <span className="absolute inset-0 bg-blue-600 -translate-x-full
                                group-hover:translate-x-0 transition-transform duration-500" />
 
@@ -65,32 +64,28 @@ const Contacts = () => {
                              border-4 border-white/30 bg-white"
                 />
 
-                <h3 className="heading-4 mb-2 text-white">
-                  {contact.name}
-                </h3>
-
+                <h3 className="heading-4 mb-2 text-white">{contact.name}</h3>
                 <p className="text-gray-300 group-hover:text-white mb-6">
                   {contact.role}
                 </p>
 
-                {/* LinkedIn Icon */}
-                <a
-                  href={contact.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-12 h-12 mx-auto bg-white/10 group-hover:bg-white
-                             rounded-full flex items-center justify-center
-                             transition-all duration-300"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="w-6 h-6 text-white group-hover:text-blue-600"
+                {contact.linkedin && (
+                  <a
+                    href={contact.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-12 h-12 mx-auto bg-white/10 group-hover:bg-white
+                               rounded-full flex items-center justify-center transition-all"
                   >
-                    <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0zM7.06 20.45H3.56V9h3.5v11.45zM5.31 7.43c-1.12 0-2.03-.91-2.03-2.03 0-1.12.91-2.03 2.03-2.03 1.12 0 2.03.91 2.03 2.03 0 1.12-.91 2.03-2.03 2.03zM20.45 20.45h-3.5v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67h-3.5V9h3.36v1.56h.05c.47-.88 1.62-1.8 3.34-1.8 3.57 0 4.22 2.35 4.22 5.41v6.28z" />
-                  </svg>
-                </a>
+                    <svg
+                      className="w-6 h-6 text-white group-hover:text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z" />
+                    </svg>
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -112,10 +107,12 @@ const Contacts = () => {
           </button>
         </div>
 
-        {/* Contact Form */}
+        {/* Contact Form (SHOW ON CLICK) */}
         {showForm && (
-          <div className="mt-12 max-w-3xl mx-auto bg-white/10 backdrop-blur-md
-                          p-8 rounded-2xl animate-slideDown">
+          <div
+            className="mt-12 max-w-3xl mx-auto bg-white/10 backdrop-blur-md
+                       p-8 rounded-2xl animate-slideDown"
+          >
             <form className="space-y-6">
               <input
                 type="text"

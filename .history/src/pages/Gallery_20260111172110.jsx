@@ -362,10 +362,10 @@ const events = [
         key: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
         title: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
         images: [
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5273 (1).jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5289.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5293.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5301.jpg" },
+            { src: "\images\एक दिन एक घंटा एक साथ राष्ट्रीय अभियान\IMG_5273 (1).jpg" },
+            { src: "/images/BloodDonation/IMGB_2.jpg" },
+            { src: "/images/BloodDonation/IMGB_3.jpg" },
+            { src: "/images/BloodDonation/IMGB_4.jpg" },
         ],
     },
 ]

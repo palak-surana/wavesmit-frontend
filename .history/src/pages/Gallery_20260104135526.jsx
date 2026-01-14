@@ -18,33 +18,6 @@ const scrollbarStyles = `
 `
 
 const events = [
-     {
-        key: "blooddonation",
-        title: "Blood Donation",
-        images: [
-            { src: "/images/BloodDonation/IMGB_1.jpg" },
-            { src: "/images/BloodDonation/IMGB_2.jpg" },
-            { src: "/images/BloodDonation/IMGB_3.jpg" },
-            { src: "/images/BloodDonation/IMGB_4.jpg" },
-            { src: "/images/BloodDonation/IMGB_5.jpg" },
-            { src: "/images/BloodDonation/IMGB_6.jpg" },
-            { src: "/images/BloodDonation/IMGB_7.jpg" },
-        ],
-    },
-     {
-        key: "GanpatiVisarjan",
-        title: "Ganpati Visarjan",
-        images: [
-            { src: "/images/GanpatiVisarjan/IMG_7550_1.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7568_2.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7649_3.jpg" },
-        
-            { src: "/images/GanpatiVisarjan/IMG_7595_5.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7633_6.jpg" },
-            { src: "/images/GanpatiVisarjan/IMG_7648_7.jpg" },
-        ],
-    },
-   
    {
     key: "arvindgupta",
     title: "Arvind Gupta Sir Talk Event",
@@ -148,31 +121,21 @@ const events = [
   title: "HC Verma Sir Talk Event 2025",
   images: [
     { src: "/images/HCVerma2025/IMG_0398.jpg" },
-   
+    { src: "/images/HCVerma2025/IMG_0406.jpg" },
     { src: "/images/HCVerma2025/IMG_0408.jpg" },
-  
+    { src: "/images/HCVerma2025/IMG_0427.jpg" },
     { src: "/images/HCVerma2025/IMG_0487.jpg" },
     { src: "/images/HCVerma2025/IMG_0519.jpg" },
     { src: "/images/HCVerma2025/IMG_0532.jpg" },
-    
-    { src: "/images/HCVerma2025/IMG_0547.jpg" },
-  
-    { src: "/images/HCVerma2025/IMG_0622.jpg" },
-    { src: "/images/HCVerma2025/IMG_0623.jpg" },
     { src: "/images/HCVerma2025/IMG_0544.jpg" },
-    { src: "/images/HCVerma2025/IMG_0647.jpg" },
-    { src: "/images/HCVerma2025/IMG_0654.jpg" },
-    { src: "/images/HCVerma2025/IMG_0690.jpg" },
-    { src: "/images/HCVerma2025/IMG_0693.jpg" },
-    { src: "/images/HCVerma2025/IMG_0700.jpg" },
-    { src: "/images/HCVerma2025/IMG_0714.jpg" },
-    { src: "/images/HCVerma2025/IMG_0746.jpg" },
-    { src: "/images/HCVerma2025/IMG_0755.jpg" },
-    { src: "/images/HCVerma2025/IMG_0771.jpg" },
-    { src: "/images/HCVerma2025/IMG_0774.jpg" },
-    
+    { src: "/images/HCVerma2025/IMG_0547.jpg" },
+    { src: "/images/HCVerma2025/IMG_0562.jpg" },
   ],
-},
+}
+
+            
+        ],
+    },
     {
         key: "scicon23",
         title: "SCICON 2023",
@@ -293,7 +256,6 @@ const events = [
             },
         ],
     },
-    
     {
         key: "telescope",
         title: "Telescope Making Workshop",
@@ -358,18 +320,7 @@ const events = [
             },
         ],
     },
-    {
-        key: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        title: "एक दिन एक घंटा एक साथ राष्ट्रीय अभियान",
-        images: [
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5273 (1).jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5289.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5293.jpg" },
-            { src: "/images/एक दिन एक घंटा एक साथ राष्ट्रीय अभियान/IMG_5301.jpg" },
-        ],
-    },
 ]
-
 
 const AUTO_ADVANCE_MS = 3400
 
